@@ -12,7 +12,7 @@ game_state.main.prototype = {
         game.load.image('sky', 'assets/sky.png');
         game.load.image('ground', 'assets/platform.png');
         game.load.image('star', 'assets/star.png');
-        game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
+        game.load.spritesheet('dude', 'assets/michael.png', 30, 81);
 
     },
     create: function() {
@@ -39,20 +39,27 @@ game_state.main.prototype = {
         ground.body.immovable = true;
 
         //The ledges
-        var ledge = this.platforms.create(50, 400, 'ground');
+        var ledge = this.platforms.create(50, 450, 'ground');
         ledge.body.immovable = true;
+        ledge.scale.setTo(.05, .2);
 
-        var ledge = this.platforms.create(400, 350, 'ground');
-        ledge.body.immovable = true;
 
-        var ledge = this.platforms.create(50, 250, 'ground');
-        ledge.body.immovable = true;
+        var ledge1 = this.platforms.create(50, 350, 'ground');
+        ledge1.body.immovable = true;
+        ledge1.scale.setTo(.05, .2);
 
-        var ledge = this.platforms.create(400, 150, 'ground');
-        ledge.body.immovable = true;
+        var ledge2 = this.platforms.create(50, 250, 'ground');
+        ledge2.body.immovable = true;
+        ledge2.scale.setTo(.05, .2);
 
-        var ledge = this.platforms.create(0, 100, 'ground');
-        ledge.body.immovable = true;
+        var ledge3 = this.platforms.create(62, 250, 'ground');
+        ledge3.body.immovable = true;
+        ledge3.scale.setTo(.02, 100);
+
+        // var ledge = this.platforms.create(0, 100, 'ground');
+        // ledge.body.immovable = true;
+
+        // var ledge = this.platforms.create()
 
         /**
          * The sprite
@@ -64,15 +71,15 @@ game_state.main.prototype = {
 
         /**Properties of sprite physics*/
         this.player.body.bounce.y = 0;
-        this.player.body.gravity.y = 2000;
+        this.player.body.gravity.y = 4500;
         this.player.body.collideWorldBounds = true;
 
         /**Walking animation*/
-        this.player.animations.add('left', [0, 1, 2, 3], 10, true);
-        this.player.animations.add('right', [5, 6, 7, 8], 10, true);
+        this.player.animations.add('right', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 14, true);
+        this.player.animations.add('left', [18, 19, 20, 21, 22, 23, 24, 25, 26, 27], 14, true);
 
         /**Sets up the controls*/
-        this.cursors = game.input.keyboard.createCursorKeys();
+        this.cursors = game.input.keyboard.createCursorKeys(); 
 
         /**
          * Stars
@@ -133,7 +140,7 @@ game_state.main.prototype = {
         /**When no keys are pressed, the player will stand still.*/
         else {
             this.player.animations.stop();
-            this.player.frame = 4;
+            this.player.frame = 13;
         }
 
         /**
@@ -142,7 +149,7 @@ game_state.main.prototype = {
          * AND if the up button is pressed
          */
         if (this.cursors.up.isDown && this.player.body.touching.down) {
-            this.player.body.velocity.y = -600;
+            this.player.body.velocity.y = -1000;
         }
     },
     /**
