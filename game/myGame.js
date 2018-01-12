@@ -21,6 +21,8 @@ game_state.main.prototype = {
 
         /**Adding a background*/
         game.add.sprite(0, 0, 'sky');
+        
+        
 
         /**
          * Contains the ground and the two ledges,
