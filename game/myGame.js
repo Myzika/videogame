@@ -1,6 +1,6 @@
-/*global Phaser*/
+/*global Phaser game*/
 
-var game = new Phaser.Game(800, 600, Phaser.AUTO, '');
+//var game = new Phaser.Game(800, 600, Phaser.AUTO, '');
 var game_state = {};
 
 game_state.main = function() {};
@@ -9,7 +9,7 @@ game_state.main.prototype = {
     score: 0,
     preload: function() {
 
-        game.load.image('sky', 'assets/sky.png');
+        game.load.image('sky', 'assets/sky.jpeg');
         game.load.image('ground', 'assets/platform.png');
         game.load.spritesheet('star', 'assets/phone.png', 26, 46);
         game.load.spritesheet('dude', 'assets/michael.png', 30, 81);
@@ -21,8 +21,6 @@ game_state.main.prototype = {
 
         /**Adding a background*/
         game.add.sprite(0, 0, 'sky');
-        
-        
 
         /**
          * Contains the ground and the two ledges,
@@ -41,22 +39,26 @@ game_state.main.prototype = {
         ground.body.immovable = true;
 
         //The ledges
-        var ledge = this.platforms.create(50, 450, 'ground');
-        ledge.body.immovable = true;
-        ledge.scale.setTo(.05, .2);
-
-
-        var ledge1 = this.platforms.create(50, 350, 'ground');
+        var ledge1 = this.platforms.create(50, 450, 'ground');
         ledge1.body.immovable = true;
         ledge1.scale.setTo(.05, .2);
 
-        var ledge2 = this.platforms.create(50, 250, 'ground');
+
+        var ledge2 = this.platforms.create(50, 350, 'ground');
         ledge2.body.immovable = true;
         ledge2.scale.setTo(.05, .2);
 
-        var ledge3 = this.platforms.create(62, 250, 'ground');
+        var ledge3 = this.platforms.create(50, 250, 'ground');
         ledge3.body.immovable = true;
-        ledge3.scale.setTo(.02, 100);
+        ledge3.scale.setTo(.05, .2);
+        
+        var ledge4 = this.platforms.create(50, 550, 'ground');
+        ledge4.body.immovable = true;
+        ledge4.scale.setTo(.05, .2);
+
+        var ledge = this.platforms.create(62, 100, 'ground');
+        ledge.body.immovable = true;
+        ledge.scale.setTo(.02, 200);
 
         // var ledge = this.platforms.create(0, 100, 'ground');
         // ledge.body.immovable = true;
@@ -166,4 +168,4 @@ game_state.main.prototype = {
 };
 
 game.state.add('main', game_state.main);
-game.state.start('main');
+//game.state.start('main');
