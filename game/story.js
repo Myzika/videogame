@@ -2,7 +2,7 @@
 var game = new Phaser.Game(screen.availWidth, screen.availHeight, Phaser.AUTO, '');
 var game_state = {};
 
-game_state.story = {
+game_state.story= {
     preload: function() {
         game.load.image('sky', 'assets/sky.jpeg');
         game.load.spritesheet('bjarne', 'assets/michael.png', 30, 81);
@@ -19,23 +19,18 @@ game_state.story = {
             boundsAlignV: 'bottom',
             fill: 'white',
         });
-        text.setTextBounds(0, 0, screen.availWidth, screen.availHeight)
+        text.setTextBounds(0, 0, screen.availWidth, screen.availHeight);
         game.add.sprite(screen.availWidth / 3 - 70, 50, 'michael');
         
         this.cursors = game.input.keyboard.createCursorKeys();
 
     },
-    state: function() {
-        if (this.cursors.left.isDown) {
-            alert("test");
-        }
-    },
-    goToStory: function() {
-       //game.state.start('storyFull');
-       alert(".");
-    },
+
     update: function() {
-        
+        if (this.cursors.right.isDown) {
+            game.state.start('storyFull');
+        //   game.add.sprite(0, 0, 'coding');
+        }
     },
 
 };

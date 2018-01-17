@@ -1,4 +1,4 @@
-/*global Phaser*/
+/*global Phaser game*/
 var game_state = {};
 
 game_state.storyFull = {
@@ -40,6 +40,7 @@ game_state.storyFull = {
     
     
     update: function() {
+        
     },
     test: function() {
         game.add.sprite(0, 0, 'coding');
