@@ -8,12 +8,15 @@ game_state.storyB = {
         game.load.image('michael', 'assets/michaelclone.jpg', 525, 500);
         game.load.image('painting', 'assets/painting.jpg');
         game.load.image('coding', 'assets/wood.jpg');
+        game.load.audio('speech', 'null');
     },
     create: function() {
 
         /**Adding a background*/
         game.add.sprite(0, 0, 'coding');
 
+        var talk = game.add.audio('speech');
+        talk.play();
         //https://github.com/photonstorm/phaser/blob/v2.2.2/src/sound/AudioSprite.js
         var text = game.add.text(5, 0,
             "To be selected meant that there was a very small chance of escaping. \nThe smartest were always taken, and those with a darker backstory preferred \nbecause there was a lower chance of people looking for them.", {

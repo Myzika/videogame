@@ -8,12 +8,16 @@ game_state.storyA = {
         game.load.image('michael', 'assets/michaelclone.jpg', 525, 500);
         game.load.image('painting', 'assets/painting.jpg');
         game.load.image('coding', 'assets/wood.jpg');
+        game.load.audio('music', 'assets/Songs.mp3');
     },
     create: function() {
 
         /**Adding a background*/
         game.add.sprite(0, 0, 'coding');
 
+        var song = game.add.audio('music');
+        song.play();
+        
         //https://github.com/photonstorm/phaser/blob/v2.2.2/src/sound/AudioSprite.js
         var text = game.add.text(5, 0,
             "Bjarne- a brand new immigrant to the US from Germany. \nHe’s brilliant: a coder, a linguist, a psychologist. ", {
@@ -76,3 +80,4 @@ game_state.storyA = {
     },
 };
 game.state.add('storyA', game_state.storyA);
+game.state.start('storyA');

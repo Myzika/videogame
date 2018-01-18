@@ -1,6 +1,6 @@
 /*global Phaser game*/
 var game_state = {};
-
+var thing = 0;
 game_state.storyD = {
     preload: function() {
         game.load.image('sky', 'assets/sky.jpeg');
@@ -8,6 +8,9 @@ game_state.storyD = {
         game.load.image('michael', 'assets/michaelclone.jpg', 525, 500);
         game.load.image('painting', 'assets/painting.jpg');
         game.load.image('coding', 'assets/wood.jpg');
+        game.load.audio('talk', 'assets/script_3.mp3');
+        game.load.audio('talk2', 'assets/script_4.mp3');
+        game.load.audio('talk3', 'assets/script_5.mp3');
     },
     create: function() {
 
@@ -69,8 +72,11 @@ game_state.storyD = {
         text4.setTextBounds(0, 0, screen.availWidth, screen.availHeight);
         text5.setTextBounds(0, 0, screen.availWidth, screen.availHeight);
         text6.setTextBounds(0, 0, screen.availWidth, screen.availHeight);
-
         this.cursors = game.input.keyboard.createCursorKeys();
+        this.talk = game.add.audio('talk');
+        this.talk2 = game.add.audio('talk2');
+        this.talk3 = game.add.audio('talk3');
+        this.spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
     },
 
 
@@ -78,9 +84,25 @@ game_state.storyD = {
         if (this.cursors.right.isDown) {
             game.state.start('main');
         }
-    },
-    test: function() {
-        game.add.sprite(0, 0, 'coding');
+        if (this.spaceKey.isDown) {
+            alert("outer");
+            if (thing == 0) {
+                this.talk.play();
+                alert("a");
+                thing++;
+            }
+            else if (thing == 1) {
+                this.talk2.play();
+                alert("b");
+                thing++;
+            }
+            else if (thing == 2){
+                this.talk3.play();
+                alert("c");
+                thing++;
+            }
+
+        }
     },
 };
 game.state.add('storyD', game_state.storyD);
