@@ -13,6 +13,7 @@ game_state.main.prototype = {
         game.load.image('ground', 'assets/platform.png');
         game.load.spritesheet('star', 'assets/phone.png', 26, 46);
         game.load.spritesheet('dude', 'assets/michael.png', 30, 81);
+        game.load.audio('kids', 'assets/marteriakids.mp3');
 
     },
     create: function() {
@@ -21,6 +22,9 @@ game_state.main.prototype = {
 
         /**Adding a background*/
         game.add.sprite(0, 0, 'sky');
+        
+        this.song = game.add.audio('kids');
+        this.song.play();
 
         /**
          * Contains the ground and the two ledges,
@@ -30,10 +34,10 @@ game_state.main.prototype = {
         this.platforms.enableBody = true;
 
         /**Creating a group for the ground*/
-        var ground = this.platforms.create(0, game.world.height - 64, 'ground');
+        var ground = this.platforms.create(0, 650, 'ground');
 
         /**Set width to the width of the game*/
-        ground.scale.setTo(2, 2);
+        ground.scale.setTo(2, 4);
 
         /**Stops the ground from falling away*/
         ground.body.immovable = true;

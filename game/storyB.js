@@ -8,7 +8,7 @@ game_state.storyB = {
         game.load.image('michael', 'assets/michaelclone.jpg', 525, 500);
         game.load.image('painting', 'assets/painting.jpg');
         game.load.image('coding', 'assets/wood.jpg');
-        game.load.audio('speech', 'null');
+      game.load.audio('speech', 'null');  
     },
     create: function() {
 
@@ -71,6 +71,7 @@ game_state.storyB = {
     update: function() {
         if (this.cursors.right.isDown) {
             game.state.start('storyC');
+            
         }
     },
     test: function() {

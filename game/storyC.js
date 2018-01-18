@@ -1,7 +1,7 @@
 /*global Phaser game*/
 var game_state = {};
 
-var thing = 2;
+var thing1 = 2;
 game_state.storyC = {
 
     preload: function() {
@@ -100,16 +100,16 @@ game_state.storyC = {
 
         if (this.spaceKey.isDown) {
             alert("outer");
-            if ((thing%2) == 0) {
+            if ((thing1%2) == 0) {
                 this.talk.play();
                 alert("a");
-                thing++;
+                thing1++;
             }
-            else if ((thing%2) == 1) {
+            else if ((thing1%2) == 1) {
 
                 this.talk2.play();
                 alert("b");
-                thing++;
+                thing1++;
             }
 
         }

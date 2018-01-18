@@ -1,6 +1,6 @@
 /*global Phaser game*/
 var game_state = {};
-var thing = 0;
+var thing2 = 0;
 game_state.storyD = {
     preload: function() {
         game.load.image('sky', 'assets/sky.jpeg');
@@ -86,20 +86,20 @@ game_state.storyD = {
         }
         if (this.spaceKey.isDown) {
             alert("outer");
-            if (thing == 0) {
+            if (thing2 == 0) {
                 this.talk.play();
                 alert("a");
-                thing++;
+                thing2++;
             }
-            else if (thing == 1) {
+            else if (thing2 == 1) {
                 this.talk2.play();
                 alert("b");
-                thing++;
+                thing2++;
             }
-            else if (thing == 2){
+            else if (thing2 == 2){
                 this.talk3.play();
                 alert("c");
-                thing++;
+                thing2++;
             }
 
         }
