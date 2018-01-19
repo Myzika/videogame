@@ -60,7 +60,7 @@ game_state.storyE = {
 
     update: function() {
         if (this.cursors.right.isDown) {
-            game.state.start('main');
+            game.state.start('postStory');
         }
         if (this.spaceKey.isDown) {
             alert("outer");

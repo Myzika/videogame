@@ -1,7 +1,7 @@
 /*global Phaser game*/
 var game_state = {};
 var thing = 0;
-game_state.storyE = {
+game_state.postStory = {
     preload: function() {
         game.load.image('sky', 'assets/sky.jpeg');
         game.load.spritesheet('bjarne', 'assets/michael.png', 30, 81);
@@ -17,7 +17,7 @@ game_state.storyE = {
 
         //https://github.com/photonstorm/phaser/blob/v2.2.2/src/sound/AudioSprite.js
         var text = game.add.text(5, 50,
-            "Rather than going down the main freeway, as Bjarne had expected, they instead turned down a dark alley, that was barely wide enough for the car.", {
+            "He woke up in a dark room.", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
@@ -25,7 +25,7 @@ game_state.storyE = {
                 fill: 'white',
             });
         var text2 = game.add.text(5, 150,
-            "The man did not speak, turning the key in the ignition and driving.Wait! Where are we going? Why are we not going down the freeway?", {
+            "He fumbled around, unsure of where he was.", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
@@ -33,7 +33,7 @@ game_state.storyE = {
                 fill: 'white',
             });
         var text3 = game.add.text(5, 250,
-            "Finally, the driver stopped the car and turned around, irritatedly at the young man. He slammed his fist into Bjarne’s skull.", {
+            "After some time, he found a switch, and he flicked it.", {
                 font: 'italic 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
@@ -41,7 +41,7 @@ game_state.storyE = {
                 fill: 'white',
             });
         var text4 = game.add.text(5, 350,
-            "Bjarne fell into a state of unconsciousness.", {
+            "Light flooded into the room. He could see the exit, over a room full of obstacles.", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
@@ -85,4 +85,4 @@ game_state.storyE = {
         }
     },
 };
-game.state.add('storyE', game_state.storyE);
+game.state.add('postStory', game_state.postStory);
