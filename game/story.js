@@ -10,18 +10,21 @@ game_state.story = {
     preload: function() {
         game.load.image('sky', 'assets/sky.jpeg');
         game.load.spritesheet('bjarne', 'assets/michael.png', 30, 81);
-        game.load.image('michael', 'assets/michaelclone.jpg', 525, 500);
+        game.load.image('michael', 'assets/michaelclone.jpg');
         game.load.image('painting', 'assets/painting.jpg');
         game.load.image('coding', 'assets/wood.jpg');
+        game.load.audio('song', 'assets/sadsong.mp3', true);
     },
     
     create: function() {
         
         /**Adds the background*/
         game.add.sprite(0, 0, 'painting');
+
+        game.add.audio('song', 1, true);
         
-        /**Adds text  */
-        var text = game.add.text(0, 0, "Name: Bjarne Joachim Wasserman \nAge: 18 \nNationality: German", {
+        /**Adds text */
+        var text = game.add.text(0, 0, "Name: Markus Callum Sauer \nAge: 18 \nNationality: German", {
             font: 'bold 40px Courier',
             align: "center",
             boundsAlignH: 'center',

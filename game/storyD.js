@@ -59,7 +59,7 @@ game_state.storyD = {
                 fill: 'white',
             });
         var text6 = game.add.text(5, 550,
-            "Bjarne fell into an uncomfortable silence. \nHis foot thumped against the ground in irritation.", {
+            "Markus fell into an uncomfortable silence. \nHis foot thumped against the ground in irritation.", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',

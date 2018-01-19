@@ -17,7 +17,7 @@ game_state.storyE = {
 
         //https://github.com/photonstorm/phaser/blob/v2.2.2/src/sound/AudioSprite.js
         var text = game.add.text(5, 50,
-            "Rather than going down the main freeway, as Bjarne had expected, they instead turned down a dark alley, that was barely wide enough for the car.", {
+            "Rather than going down the main freeway, as Markus had expected, they instead turned down a dark alley, that was barely wide enough for the car.", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
@@ -33,7 +33,7 @@ game_state.storyE = {
                 fill: 'white',
             });
         var text3 = game.add.text(5, 250,
-            "Finally, the driver stopped the car and turned around, irritatedly at the young man. He slammed his fist into Bjarne’s skull.", {
+            "Finally, the driver stopped the car and turned around, irritatedly at the young man. He slammed his fist into Markus’ skull.", {
                 font: 'italic 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
@@ -41,7 +41,7 @@ game_state.storyE = {
                 fill: 'white',
             });
         var text4 = game.add.text(5, 350,
-            "Bjarne fell into a state of unconsciousness.", {
+            "Markus fell into a state of unconsciousness.", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
@@ -54,8 +54,6 @@ game_state.storyE = {
         text4.setTextBounds(0, 0, screen.availWidth, screen.availHeight);
         this.cursors = game.input.keyboard.createCursorKeys();
         this.talk = game.add.audio('talk');
-        this.talk2 = game.add.audio('talk2');
-        this.talk3 = game.add.audio('talk3');
         this.spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
     },
 

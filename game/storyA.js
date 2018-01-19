@@ -20,7 +20,7 @@ game_state.storyA = {
         
         //https://github.com/photonstorm/phaser/blob/v2.2.2/src/sound/AudioSprite.js
         var text = game.add.text(5, 0,
-            "Bjarne- a brand new immigrant to the US from Germany. \nHe’s brilliant: a coder, a linguist, a psychologist. ", {
+            "Markus- a brand new immigrant to the US from Germany. \nHe’s brilliant: a coder, a linguist, a psychologist. ", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
@@ -81,4 +81,4 @@ game_state.storyA = {
     },
 };
 game.state.add('storyA', game_state.storyA);
-game.state.start('storyA');
+//game.state.start('storyA');

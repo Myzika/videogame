@@ -27,7 +27,7 @@ game_state.storyB = {
                 fill: 'white',
             });
         var text2 = game.add.text(5, 150,
-            "That, is why Bjarne was the ultimate target. \nEverything about the young man fit the mold that the government wanted.", {
+            "That, is why Markus was the ultimate target. \nEverything about the young man fit the mold that the government wanted.", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
