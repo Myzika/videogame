@@ -1,12 +1,13 @@
 /*global Phaser game*/
-
-//var game = new Phaser.Game(800, 600, Phaser.AUTO, '');
 var game_state = {};
 
 game_state.main = function() {};
 
 game_state.main.prototype = {
     score: 0,
+    /**
+     * Loads in all of the sprites and sounds
+     */
     preload: function() {
 
         game.load.image('sky', 'assets/sky.jpeg');
@@ -425,14 +426,19 @@ game_state.main.prototype = {
         this.score += 1;
         this.scoreText.text = `Information: ${this.score}`;
     },
+
+    /**
+     * Ends the game when the player touches the door
+     * @param {player} player
+     * @param {door} door object
+     */
     end: function(player, door) {
         if (this.score >= 3) {
+            this.song.stop();
             game.state.start('end');
-            alert();
         }
 
     }
 };
 
 game.state.add('main', game_state.main);
-game.state.start('main');

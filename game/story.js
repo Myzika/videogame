@@ -13,7 +13,6 @@ game_state.story = {
         game.load.image('michael', 'assets/michaelclone.jpg');
         game.load.image('painting', 'assets/painting.jpg');
         game.load.image('coding', 'assets/wood.jpg');
-        game.load.audio('song', 'assets/sadsong.mp3', true);
     },
     
     create: function() {
@@ -21,7 +20,6 @@ game_state.story = {
         /**Adds the background*/
         game.add.sprite(0, 0, 'painting');
 
-        game.add.audio('song', 1, true);
         
         /**Adds text */
         var text = game.add.text(0, 0, "Name: Markus Callum Sauer \nAge: 18 \nNationality: German", {
@@ -48,4 +46,4 @@ game_state.story = {
 
 };
 game.state.add('story', game_state.story);
-//game.state.start('story');
+game.state.start('story');

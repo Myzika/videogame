@@ -14,9 +14,6 @@ game_state.storyA = {
 
         /**Adding a background*/
         game.add.sprite(0, 0, 'coding');
-
-        this.song = game.add.audio('music');
-        this.song.play();
         
         //https://github.com/photonstorm/phaser/blob/v2.2.2/src/sound/AudioSprite.js
         var text = game.add.text(5, 0,
@@ -73,7 +70,6 @@ game_state.storyA = {
     update: function() {
         if (this.cursors.right.isDown) {
             game.state.start('storyB');
-            this.song.stop();
         }
     },
     test: function() {

@@ -82,23 +82,20 @@ game_state.storyD = {
 
     update: function() {
         if (this.cursors.right.isDown) {
-            game.state.start('main');
+            game.state.start('storyE');
         }
         if (this.spaceKey.isDown) {
             alert("outer");
             if (thing2 == 0) {
                 this.talk.play();
-                alert("a");
                 thing2++;
             }
             else if (thing2 == 1) {
                 this.talk2.play();
-                alert("b");
                 thing2++;
             }
             else if (thing2 == 2){
                 this.talk3.play();
-                alert("c");
                 thing2++;
             }
 

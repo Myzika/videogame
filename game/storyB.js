@@ -8,18 +8,15 @@ game_state.storyB = {
         game.load.image('michael', 'assets/michaelclone.jpg', 525, 500);
         game.load.image('painting', 'assets/painting.jpg');
         game.load.image('coding', 'assets/wood.jpg');
-      game.load.audio('speech', 'null');  
     },
     create: function() {
 
         /**Adding a background*/
         game.add.sprite(0, 0, 'coding');
 
-        var talk = game.add.audio('speech');
-        talk.play();
         //https://github.com/photonstorm/phaser/blob/v2.2.2/src/sound/AudioSprite.js
         var text = game.add.text(5, 0,
-            "To be selected meant that there was a very small chance of escaping. \nThe smartest were always taken, and those with a darker backstory preferred \nbecause there was a lower chance of people looking for them.", {
+            "To be selected meant that there was a very small chance of escaping. \nThe smartest were always taken, \nand those with a darker backstory preferred \nbecause there was a lower chance of people looking for them.", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
@@ -27,14 +24,14 @@ game_state.storyB = {
                 fill: 'white',
             });
         var text2 = game.add.text(5, 150,
-            "That, is why Markus was the ultimate target. \nEverything about the young man fit the mold that the government wanted.", {
+            "That, is why Markus was the ultimate target. \nEverything about the young man fit the mold \nthat the government wanted.", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
                 boundsAlignV: 'top',
                 fill: 'white',
             });
-        var text3 = game.add.text(5, 250,
+        var text3 = game.add.text(5, 300,
             "He was ingenious, with a terrible, dark backstory, \nand substance abuse issues. ", {
                 font: 'bold 30px Courier',
                 align: "center",
@@ -42,7 +39,7 @@ game_state.storyB = {
                 boundsAlignV: 'top',
                 fill: 'white',
             });
-        var text4 = game.add.text(5, 350,
+        var text4 = game.add.text(5, 400,
             "I took my first step out of the airport and looked around, \ntrying to find my bearings, to memorize my surroundings. \nI had a meeting I needed to get to. \nSomeone was supposed to meet me here, but where was here?", {
                 font: 'italic 30px Avenir',
                 align: "center",
@@ -50,7 +47,7 @@ game_state.storyB = {
                 boundsAlignV: 'top',
                 fill: 'white',
             });
-        var text5 = game.add.text(5, 550,
+        var text5 = game.add.text(5, 600,
             "Bjarne blinked a few times, trying to get used to the area. \nHe rearranged his bags, as he waited. \nA well-built man came out to stand in front of him.", {
                 font: 'bold 30px Courier',
                 align: "center",

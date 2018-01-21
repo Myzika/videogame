@@ -17,30 +17,30 @@ game_state.storyE = {
 
         //https://github.com/photonstorm/phaser/blob/v2.2.2/src/sound/AudioSprite.js
         var text = game.add.text(5, 50,
-            "Rather than going down the main freeway, as Markus had expected, they instead turned down a dark alley, that was barely wide enough for the car.", {
+            "Rather than going down the main freeway, as Markus had expected, \nthey instead turned down a dark alley, \nthat was barely wide enough for the car.", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
                 boundsAlignV: 'top',
                 fill: 'white',
             });
-        var text2 = game.add.text(5, 150,
-            "The man did not speak, turning the key in the ignition and driving.Wait! Where are we going? Why are we not going down the freeway?", {
+        var text2 = game.add.text(5, 200,
+            "The man did not speak, turning the key in the ignition and driving. \nWait! Where are we going? Why are we not going down the freeway?", {
                 font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
                 boundsAlignV: 'top',
                 fill: 'white',
             });
-        var text3 = game.add.text(5, 250,
-            "Finally, the driver stopped the car and turned around, irritatedly at the young man. He slammed his fist into Markus’ skull.", {
+        var text3 = game.add.text(5, 325,
+            "Finally, the driver stopped the car and turned around, \nirritatedly at the young man. \nHe slammed his fist into Markus’ skull.", {
                 font: 'italic 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
                 boundsAlignV: 'top',
                 fill: 'white',
             });
-        var text4 = game.add.text(5, 350,
+        var text4 = game.add.text(5, 500,
             "Markus fell into a state of unconsciousness.", {
                 font: 'bold 30px Courier',
                 align: "center",

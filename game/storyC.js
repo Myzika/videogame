@@ -99,16 +99,13 @@ game_state.storyC = {
         }
 
         if (this.spaceKey.isDown) {
-            alert("outer");
             if ((thing1%2) == 0) {
                 this.talk.play();
-                alert("a");
                 thing1++;
             }
             else if ((thing1%2) == 1) {
 
                 this.talk2.play();
-                alert("b");
                 thing1++;
             }
 
