@@ -134,9 +134,183 @@ game_state.main.prototype = {
         ledge20.body.immovable = true;
         ledge20.scale.setTo(.05, 1.5);
         
-        var ledge21 = this.platforms.create(520, 455, 'ground');
+        var ledge21 = this.platforms.create(520, 485, 'ground');
         ledge21.body.immovable = true;
-        ledge21.scale.setTo(1, .2);
+        ledge21.scale.setTo(3.5, .2);
+
+        var ledge22 = this.platforms.create(570, 580, 'ground');
+        ledge22.body.immovable = true;
+        ledge22.scale.setTo(.05, 1.5);
+
+        var ledge23 = this.platforms.create(620, 580, 'ground');
+        ledge23.body.immovable = true;
+        ledge23.scale.setTo(.05, 1.5);
+
+        var ledge24 = this.platforms.create(670, 580, 'ground');
+        ledge24.body.immovable = true;
+        ledge24.scale.setTo(.05, 1.5);
+
+        var ledge25 = this.platforms.create(720, 580, 'ground');
+        ledge25.body.immovable = true;
+        ledge25.scale.setTo(.05, 1.5);
+
+        var ledge26 = this.platforms.create(770, 580, 'ground');
+        ledge26.body.immovable = true;
+        ledge26.scale.setTo(.05, 1.5);
+
+        var ledge27 = this.platforms.create(820, 580, 'ground');
+        ledge27.body.immovable = true;
+        ledge27.scale.setTo(.05, 1.5);
+
+        var ledge28 = this.platforms.create(870, 580, 'ground');
+        ledge28.body.immovable = true;
+        ledge28.scale.setTo(.05, 1.5);
+
+        var ledge29 = this.platforms.create(920, 580, 'ground');
+        ledge29.body.immovable = true;
+        ledge29.scale.setTo(.05, 1.5);
+
+        var ledge30 = this.platforms.create(970, 580, 'ground');
+        ledge30.body.immovable = true;
+        ledge30.scale.setTo(.05, 1.5);
+
+        var ledge31 = this.platforms.create(1020, 580, 'ground');
+        ledge31.body.immovable = true;
+        ledge31.scale.setTo(.05, 1.5);
+
+        var ledge32 = this.platforms.create(1070, 580, 'ground');
+        ledge32.body.immovable = true;
+        ledge32.scale.setTo(.05, 1.5);
+
+        var ledge33 = this.platforms.create(1120, 580, 'ground');
+        ledge33.body.immovable = true;
+        ledge33.scale.setTo(.05, 1.5);
+
+        var ledge34 = this.platforms.create(1200, 570, 'ground');
+        ledge34.body.immovable = true;
+        ledge34.scale.setTo(.5, .5);
+
+        //Second set of hurdles
+        var ledge34 = this.platforms.create(520, 400, 'ground');
+        ledge34.body.immovable = true;
+        ledge34.scale.setTo(.3, .5);
+
+        var ledge39 = this.platforms.create(520, 400, 'ground');
+        ledge39.body.immovable = true;
+        ledge39.scale.setTo(.05, 1.5);
+
+        var ledge40 = this.platforms.create(560, 300, 'ground');
+        ledge40.body.immovable = true;
+        ledge40.scale.setTo(3.3, .2);
+
+        var ledge41 = this.platforms.create(570, 400, 'ground');
+        ledge41.body.immovable = true;
+        ledge41.scale.setTo(.05, 1.5);
+
+        var ledge42 = this.platforms.create(620, 400, 'ground');
+        ledge42.body.immovable = true;
+        ledge42.scale.setTo(.05, 1.5);
+
+        var ledge43 = this.platforms.create(670, 400, 'ground');
+        ledge43.body.immovable = true;
+        ledge43.scale.setTo(.05, 1.5);
+
+        var ledge44 = this.platforms.create(720, 400, 'ground');
+        ledge44.body.immovable = true;
+        ledge44.scale.setTo(.05, 1.5);
+
+        var ledge45 = this.platforms.create(770, 400, 'ground');
+        ledge45.body.immovable = true;
+        ledge45.scale.setTo(.05, 1.5);
+
+        var ledge46 = this.platforms.create(820, 400, 'ground');
+        ledge46.body.immovable = true;
+        ledge46.scale.setTo(.05, 1.5);
+
+        var ledge47 = this.platforms.create(870, 400, 'ground');
+        ledge47.body.immovable = true;
+        ledge47.scale.setTo(.05, 1.5);
+
+        var ledge48 = this.platforms.create(920, 400, 'ground');
+        ledge48.body.immovable = true;
+        ledge48.scale.setTo(.05, 1.5);
+
+        var ledge49 = this.platforms.create(970, 400, 'ground');
+        ledge49.body.immovable = true;
+        ledge49.scale.setTo(.05, 1.5);
+
+        var ledge50 = this.platforms.create(1020, 400, 'ground');
+        ledge50.body.immovable = true;
+        ledge50.scale.setTo(.05, 1.5);
+
+        var ledge51 = this.platforms.create(1070, 400, 'ground');
+        ledge51.body.immovable = true;
+        ledge51.scale.setTo(.05, 1.5);
+
+        var ledge52 = this.platforms.create(1120, 400, 'ground');
+        ledge52.body.immovable = true;
+        ledge52.scale.setTo(.05, 1.5);
+
+        var ledge53 = this.platforms.create(510, 0, 'stone');
+        ledge53.body.immovable = true;
+        ledge53.scale.setTo(.02, 1.4);
+
+        //More hurdles
+        var ledge54 = this.platforms.create(570, 220, 'ground');
+        ledge54.body.immovable = true;
+        ledge54.scale.setTo(.05, 1.5);
+
+        var ledge55 = this.platforms.create(620, 220, 'ground');
+        ledge55.body.immovable = true;
+        ledge55.scale.setTo(.05, 1.5);
+
+        var ledge56 = this.platforms.create(670, 220, 'ground');
+        ledge56.body.immovable = true;
+        ledge56.scale.setTo(.05, 1.5);
+
+        var ledge57 = this.platforms.create(720, 220, 'ground');
+        ledge57.body.immovable = true;
+        ledge57.scale.setTo(.05, 1.5);
+
+        var ledge58 = this.platforms.create(770, 220, 'ground');
+        ledge58.body.immovable = true;
+        ledge58.scale.setTo(.05, 1.5);
+
+        var ledge59 = this.platforms.create(820, 220, 'ground');
+        ledge59.body.immovable = true;
+        ledge59.scale.setTo(.05, 1.5);
+
+        var ledge60 = this.platforms.create(870, 220, 'ground');
+        ledge60.body.immovable = true;
+        ledge60.scale.setTo(.05, 1.5);
+
+        var ledge61 = this.platforms.create(920, 220, 'ground');
+        ledge61.body.immovable = true;
+        ledge61.scale.setTo(.05, 1.5);
+
+        var ledge62 = this.platforms.create(970, 220, 'ground');
+        ledge62.body.immovable = true;
+        ledge62.scale.setTo(.05, 1.5);
+
+        var ledge63 = this.platforms.create(1020, 220, 'ground');
+        ledge63.body.immovable = true;
+        ledge63.scale.setTo(.05, 1.5);
+
+        var ledge64 = this.platforms.create(1070, 220, 'ground');
+        ledge64.body.immovable = true;
+        ledge64.scale.setTo(.05, 1.5);
+
+        var ledge65 = this.platforms.create(1120, 220, 'ground');
+        ledge65.body.immovable = true;
+        ledge65.scale.setTo(.05, 1.5);
+
+        var ledge66 = this.platforms.create(1200, 220, 'ground');
+        ledge66.body.immovable = true;
+        ledge66.scale.setTo(.5, .5);
+
+        var ledge67 = this.platforms.create(540, 120, 'ground');
+        ledge67.body.immovable = true;
+        ledge67.scale.setTo(3.3, .2);
 
         /**
          * The sprite
@@ -185,7 +359,7 @@ game_state.main.prototype = {
 
         this.door = game.add.group(); 
         this.door.enableBody = true;
-        var door = this.door.create(screen.availWidth - 100, 20, 'door');
+        var door = this.door.create(screen.availWidth - 100, 10, 'door');
         door.enableBody = true;
         this.cheat = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
