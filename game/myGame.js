@@ -130,6 +130,13 @@ game_state.main.prototype = {
         ledge19.body.immovable = true;
         ledge19.scale.setTo(.018, .2);
         
+        var ledge20 = this.platforms.create(520, 580, 'ground');
+        ledge20.body.immovable = true;
+        ledge20.scale.setTo(.05, 1.5);
+        
+        var ledge21 = this.platforms.create(520, 455, 'ground');
+        ledge21.body.immovable = true;
+        ledge21.scale.setTo(1, .2);
 
         /**
          * The sprite
@@ -164,6 +171,7 @@ game_state.main.prototype = {
         /**Creates stars at even spaces*/
         var star = this.stars.create(55, 120, 'star');
         var star = this.stars.create(140, 110, 'star');
+        var star = this.stars.create(448, 0, 'star');
 
         /**Star gravity*/
         star.body.gravity.y = 300;
@@ -175,7 +183,7 @@ game_state.main.prototype = {
             fill: '#000'
         });
 
-        this.door = game.add.group();
+        this.door = game.add.group(); 
         this.door.enableBody = true;
         var door = this.door.create(screen.availWidth - 100, 20, 'door');
         door.enableBody = true;
