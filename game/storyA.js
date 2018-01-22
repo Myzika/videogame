@@ -3,12 +3,7 @@ var game_state = {};
 
 game_state.storyA = {
     preload: function() {
-        game.load.image('sky', 'assets/sky.jpeg');
-        game.load.spritesheet('bjarne', 'assets/michael.png', 30, 81);
-        game.load.image('michael', 'assets/michaelclone.jpg', 525, 500);
-        game.load.image('painting', 'assets/painting.jpg');
         game.load.image('coding', 'assets/wood.jpg');
-        game.load.audio('music', 'assets/readyaimfire.mp3');
     },
     create: function() {
 

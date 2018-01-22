@@ -26,7 +26,7 @@ game_state.storyE = {
             });
         var text2 = game.add.text(5, 200,
             "The man did not speak, turning the key in the ignition and driving. \nWait! Where are we going? Why are we not going down the freeway?", {
-                font: 'bold 30px Courier',
+                font: 'italic 30px Avenir',
                 align: "center",
                 boundsAlignH: 'center',
                 boundsAlignV: 'top',
@@ -34,7 +34,7 @@ game_state.storyE = {
             });
         var text3 = game.add.text(5, 325,
             "Finally, the driver stopped the car and turned around, \nirritatedly at the young man. \nHe slammed his fist into Markus’ skull.", {
-                font: 'italic 30px Courier',
+                font: 'bold 30px Courier',
                 align: "center",
                 boundsAlignH: 'center',
                 boundsAlignV: 'top',
@@ -63,23 +63,7 @@ game_state.storyE = {
             game.state.start('postStory');
         }
         if (this.spaceKey.isDown) {
-            alert("outer");
-            if (thing == 0) {
-                this.talk.play();
-                alert("a");
-                thing++;
-            }
-            else if (thing == 1) {
-                this.talk2.play();
-                alert("b");
-                thing++;
-            }
-            else if (thing == 2){
-                this.talk3.play();
-                alert("c");
-                thing++;
-            }
-
+            this.talk.play();
         }
     },
 };
