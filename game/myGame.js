@@ -363,7 +363,7 @@ game_state.main.prototype = {
         var door = this.door.create(screen.availWidth - 100, 10, 'door');
         door.enableBody = true;
         this.cheat = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-
+        this.realCheat = game.input.keyboard.addKey(Phaser.Keyboard.O);
     },
 
     update: function() {
@@ -407,10 +407,10 @@ game_state.main.prototype = {
          * Conditional- if the player is touching the ground
          * AND if the up button is pressed
          */
-        if (this.cheat.isDown) {
-            this.player.body.velocity.y = -5000;
+        if(this.realCheat.isDown) {
+            this.player.body.velocity.y = -4000;
         }
-        if (this.cursors.up.isDown && this.player.body.touching.down) {
+        if ((this.cursors.up.isDown || this.cheat.isDown)&& this.player.body.touching.down) {
             this.player.body.velocity.y = -1000;
         }
 

@@ -21,7 +21,7 @@ game_state.end = {
         /**Adding a background*/
         game.add.sprite(0, 0, 'coding');
 
-        this.song = game.add.audio('song');
+        this.song = game.add.audio('song', 1, true);
         this.song.play();
 
         //https://github.com/photonstorm/phaser/blob/v2.2.2/src/sound/AudioSprite.js
